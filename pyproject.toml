@@ -1,0 +1,25 @@
+[project]
+name = "basic-ai-chat"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Anuj", email = "anuj2shukla@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=2.3.0",
+    "gradio>=6.30.0",
+    "ipykernel>=7.4.0",
+    "jupyter>=1.1.1",
+    "ollama>=0.6.3",
+    "openai>=3.40.0",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+basic-ai-chat = "basic_ai_chat:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
